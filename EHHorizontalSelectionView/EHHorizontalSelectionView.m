@@ -137,6 +137,12 @@ typedef NS_ENUM(NSUInteger, EHHorizontalSelectionViewType) {
 
 #pragma mark - Accessors & Mutators 
 
+- (void)setShadowDisable:(BOOL)shadowDisable {
+    _shadowDisable = shadowDisable;
+    _hasChanges = YES;
+    [self reloadData];
+}
+    
 - (void)setNeedCentered:(BOOL)needCentered {
     _needCentered = needCentered;
     _hasChanges = YES;
@@ -347,6 +353,10 @@ typedef NS_ENUM(NSUInteger, EHHorizontalSelectionViewType) {
     
     if (self.fontMedium) {
         [cell setFontMedium:self.fontMedium];
+    }
+    
+    if (self.shadowDisable) {
+        [cell setShadowDisable:self.shadowDisable];
     }
     
     cell.selectedCell = NO;

@@ -58,6 +58,11 @@ IB_DESIGNABLE
  * @brief need center cells if sums of their width < screen size. If not setted value will take from cell class method +needCentered
  */
 @property (nonatomic, assign) IBInspectable BOOL needCentered;
+    
+/*!
+ * @brief shadow of cells.
+ */
+@property (nonatomic, assign) IBInspectable BOOL shadowDisable;
 
 /*!
  * @brief select element of selection view

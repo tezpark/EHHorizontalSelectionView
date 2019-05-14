@@ -83,7 +83,10 @@ static NSMutableDictionary * _Nullable _EHHorisontalSelectionStyles = nil;
 {
     _tintColor = tintColor;
     self.coloredView.backgroundColor = tintColor;
-    self.coloredView.layer.shadowColor = tintColor.CGColor;
+    
+    if (self.shadowDisable) {
+        self.coloredView.layer.shadowColor = tintColor.CGColor;
+    }
 }
 
 - (void)setTextColor:(UIColor *)textColor
@@ -95,6 +98,14 @@ static NSMutableDictionary * _Nullable _EHHorisontalSelectionStyles = nil;
 - (void)setAltTextColor:(UIColor *)textColor
 {
     _altTextColor = textColor;
+}
+    
+- (void)setShadowDisable:(BOOL)shadowDisable {
+    _shadowDisable = shadowDisable;
+    
+    if (self.shadowDisable) {
+        self.coloredView.layer.shadowColor = [UIColor clearColor].CGColor;
+    }
 }
 
 

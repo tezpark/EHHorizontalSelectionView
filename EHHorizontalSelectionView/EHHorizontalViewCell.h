@@ -63,6 +63,11 @@ IB_DESIGNABLE
  */
 @property (nonatomic, strong) UIFont * _Nullable fontMedium;
 
+/*!
+ * @brief flag that cell shadow activate state
+ */
+@property (nonatomic, assign) BOOL shadowDisable;
+
 //class methods
 
 
