@@ -35,11 +35,7 @@ static float _EHHorizontalColorHeight = 4;
 - (UIView *)createSelectedView
 {
     self.clipsToBounds = NO;
-    self.coloredView.layer.shadowRadius = 7.5;
-    self.coloredView.layer.shadowOffset = CGSizeMake(0, 0);
     self.coloredView.layer.masksToBounds = NO;
-    self.coloredView.layer.shadowColor = self.coloredView.backgroundColor.CGColor;
-    self.coloredView.layer.shadowOpacity = 1;
     self.selectedView.clipsToBounds = NO;
 
     [self updateSelectedFrames];

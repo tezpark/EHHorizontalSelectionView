@@ -60,11 +60,6 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable BOOL needCentered;
     
 /*!
- * @brief shadow of cells.
- */
-@property (nonatomic, assign) IBInspectable BOOL shadowDisable;
-
-/*!
  * @brief select element of selection view
  *
  * @param index Index to select
