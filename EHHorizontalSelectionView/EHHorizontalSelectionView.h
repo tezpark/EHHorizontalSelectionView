@@ -64,7 +64,7 @@ IB_DESIGNABLE
  *
  * @param index Index to select
  */
-- (void)selectIndex:(NSUInteger)index;
+- (void)selectRowWithIndex:(NSUInteger)index;
 
 /*!
  * @brief register class for use by selection view
