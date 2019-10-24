@@ -21,7 +21,7 @@
 {
     NSMutableDictionary * retDict = [super styles];
     [retDict setObject:[UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:18.0] forKey:@"fontMedium"];
-    [retDict setObject:[UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:15.0] forKey:@"font"];
+    [retDict setObject:[UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:18.0] forKey:@"font"];
     [retDict setObject:@(48) forKey:@"cellGap"];
     [retDict setObject:@(NO) forKey:@"needCentered"];
     return retDict;
